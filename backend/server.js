@@ -30,4 +30,3 @@ app.get('/', (req, res) => {
 })
  
 app.listen(port, () => console.log(`listening on localhost:${port}`));
-//mongodb+srv://foodapp:93633@cluster0.wo1ohpp.mongodb.net/?
