@@ -29,5 +29,5 @@ app.get('/', (req, res) => {
     res.status(200).send('API is running..');
 })
  
-app.listen(port, () => console.log(`listening on localhost:${port}`));
+// app.listen(port, () => console.log(`listening on localhost:${port}`));
 //mongodb+srv://foodapp:93633@cluster0.wo1ohpp.mongodb.net/?
