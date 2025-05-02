@@ -2,7 +2,7 @@ import React from 'react'
 import './explore_menu.css'
 import { menu_list } from '../../assets/assets'
 const Explore_menu = ({catagory,setCatagory}) => {
-    console.log(catagory)
+    
   return (
     <div className='explore-menu' id='explore-menu'>
         <h1>explorem menu</h1>

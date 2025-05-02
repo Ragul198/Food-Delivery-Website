@@ -10,7 +10,12 @@ const Store_context_provider = (props) => {
   const [food_list ,setFoodlist] = useState([])
 
 
-  const url ='http://localhost:4000';
+  const url = import.meta.env.VITE_API_URL;
+  
+ 
+  
+
+  
  
 
   const foodlist = async()=>{

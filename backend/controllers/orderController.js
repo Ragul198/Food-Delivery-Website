@@ -20,7 +20,7 @@ const placeOrder = async(req,res)=>{
             amount:req.body.amount,
             address:req.body.address
         })
-        console.log('new-oder done');
+        
         await newOrder.save();
         await userModel.findByIdAndUpdate(req.userId,{cartData:{}}); 
         console.log(newOrder);
@@ -33,7 +33,7 @@ const placeOrder = async(req,res)=>{
               userId: req.userId.toString()
             }
           });
-          console.log("odercreated");
+        
 
           res.json({
             success: true,
@@ -41,8 +41,7 @@ const placeOrder = async(req,res)=>{
             orderId: newOrder._id
           });
 
-          console.log('order-sucessfully created');
-          console.log(payment_order);
+        
         
  } 
  catch (error) {
@@ -60,7 +59,7 @@ const verifyPayment = async(req,res)=>{
         
       } = req.body;
 
-      console.log("data is here")
+      
 
       try{
     

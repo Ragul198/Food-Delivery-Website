@@ -39,7 +39,7 @@ const Placer_order = () => {
       items: order_items,
       amount: cart_total_price() + 2,
     };
-    console.log(orderData);
+    
     try {
       const response = await axios.post(
         `${url}/api/order/placeorder`,
@@ -69,7 +69,7 @@ const Placer_order = () => {
                 orderId: OderID,
               }
             );
-            console.log(verifyRes.data);
+            
             if (verifyRes.data.success) {
               window.location.href = `/ordersuccess?success=true&orderId=${OderID}`;
             } else {

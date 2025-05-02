@@ -8,7 +8,7 @@ const Payment = () => {
     const [searchParams] = useSearchParams();
     const success = searchParams.get('success');
     const orderId = searchParams.get('orderId');
-    console.log(success, orderId);
+    
   
     useEffect(() => {
       window.scrollTo(0, 0);
