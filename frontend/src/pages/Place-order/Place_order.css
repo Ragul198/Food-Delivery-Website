@@ -1,0 +1,46 @@
+.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 50px;
+    margin-top: 100px;
+}
+.left-form{
+    width: 100%;
+    width: max(30%, 500px);
+}
+.left-form h2{
+    
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.left-form input{
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    width: 100%;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    outline-color: tomato;
+}
+.left-form .two{
+    display: flex;
+    gap: 10px;
+}
+.right-form{
+    width: 100%;
+    max-width: max(40%, 500px);
+}
+.right-form .cart-Total button{
+    margin-top: 30px;
+}
+@media (max-width:750px) {
+    .form{
+        flex-direction: column;
+        align-items: start;
+    }
+    .left-form{
+        
+        width: max(30%, 340px);
+    }
+    
+}

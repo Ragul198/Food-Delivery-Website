@@ -1,0 +1,101 @@
+.explore-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.explore-menu h1{
+    font-weight: 500;
+    color: #262626;
+}
+.menu-desc {
+    width: 60%;
+    color: #808080; /* You wrote 'columns' instead of 'color' */
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    overflow-x: scroll;
+    text-align: center;
+    margin: 20px 0px;
+}
+.menu::-webkit-scrollbar {
+    display: none;/* Adjust the scrollbar size as needed */
+}
+.menu-item img{
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.menu-item p{
+    margin-top: 10px;
+    color: #747474;
+    font-size: max(1.4vw,16px);
+    cursor: pointer;
+}
+.line{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+}
+.activemenu{
+    border: 2px solid tomato;
+    padding: 2px;
+}
+@media (max-width: 1050px) {
+    .menu-desc {
+        width: 100%;
+        text-align: start;
+        font-size: 16px;
+    }
+    .menu {
+        gap: 15px;
+        padding: 0 12px;
+    }
+    .menu-item img {
+        width: 12vw;
+        
+        
+    }
+    .menu-item p {
+        font-size: 16px;
+    }
+    .explore-menu h1 {
+        font-size: 24px;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-desc {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .menu {
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .menu-item img {
+        width: 18vw;
+        min-width: 60px;
+    }
+
+    .menu-item p {
+        font-size: 14px;
+    }
+
+    .explore-menu h1 {
+        font-size: 22px;
+        text-align: center;
+        
+    }
+}
