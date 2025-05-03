@@ -25,13 +25,13 @@ app.use('/api/order',orderRouter);
 
 
 
-// app.get('/', (req, res) => {
-//     res.status(200).send('API is running..');
-// })
+app.get('/', (req, res) => {
+    res.status(200).send('API is running..');
+})
 
-export default function handler(req, res) {
-    res.send("API is working");
-  }
+// export default function handler(req, res) {
+//     res.send("API is working");
+//   }
   
  
-// app.listen(port, () => console.log(`listening on localhost:${port}`));
+app.listen(port, () => console.log(`listening on localhost:${port}`));
