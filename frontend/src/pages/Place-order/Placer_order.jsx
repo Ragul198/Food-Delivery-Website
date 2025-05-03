@@ -6,6 +6,7 @@ import { useNavigate } from "react-router";
 const Placer_order = () => {
   const { cart_total_price, food_list, cartitem, totalprice, url, token } =
     useContext(storeContext);
+    const navigate = useNavigate();
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -71,10 +72,10 @@ const Placer_order = () => {
             );
             
             if (verifyRes.data.success) {
-              window.location.href = `/ordersuccess?success=true&orderId=${OderID}`;
+              navigate(`/ordersuccess?success=true&orderId=${OderID}`);
             } else {
               alert("Payment failed");
-              window.location.href = `/ordersuccess?success=false&orderId=${OderID}`;
+              navigate(`/ordersuccess?success=false&orderId=${OderID}`);
             }
           } catch (err) {
             console.error("Payment verification failed", err);
@@ -90,7 +91,7 @@ const Placer_order = () => {
       alert("Something went wrong");
     }
   };
-  const navigate = useNavigate();
+  
   useEffect(() => {
     if(!token){
       navigate("/cart");
