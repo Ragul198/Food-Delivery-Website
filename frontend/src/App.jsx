@@ -1,5 +1,5 @@
 import Navbar from "./components/navbar/Navbar";
-import { Route, Routes } from "react-router";
+import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Cart from "./pages/cart/Cart";
 import Place_order from "./pages/Place-order/Placer_order";
