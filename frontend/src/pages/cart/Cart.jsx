@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Cart.css";
 import { storeContext } from "../../context/storecontext";
 import { useContext } from "react";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 const Cart = () => {
   const { food_list, clearitem, removeitem, cartitem ,cart_total_price ,url,token } =
